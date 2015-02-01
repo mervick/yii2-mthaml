@@ -34,19 +34,7 @@
         "gregwar/rst": "~1"
     },
     "suggest": {
-        "twig/twig": "If you want to use Twig templating engine",
-        "twig/extensions": "If you want to use Twig extensions",
-        "oyejorge/less.php": "If you want to use :less filter",
-        "leafo/lessphp": "If you want to use :less filter",
-        "leafo/scssphp": "If you want to use :scss filter",
-        "coffeescript/coffeescript": "If you want to use :coffee or :coffeescript filter",
-        "michelf/php-markdown": "If you want to use :markdown filter",
-        "erusev/parsedown": "If you want to use :markdown filter",
-        "cebe/markdown": "If you want to use :markdown filter",
-        "kzykhys/ciconia": "If you want to use :markdown filter",
-        "league/commonmark": "If you want to use :markdown filter",
-        "fluxbb/commonmark": "If you want to use :markdown filter",
-        "gregwar/rst": "If you want to use :rest filter"
+        "twig/extensions": "If you want to use Twig extensions"
     },
     "autoload": {
         "psr-4": { "mervick\\mthaml\\": "src/" }
