@@ -121,23 +121,23 @@ The following filters are available by default:
 Filters which not enabled by default:
 
 *   `coffee`: compiles coffeescript to javascript
-    - dependence `coffeescript/coffeescript "~1"` (`CoffeeScript`)
+    - dependence `coffeescript/coffeescript "~1"` (CoffeeScript)
 *   `less`: compiles as Lesscss
     - dependence one of following:  
-        `oyejorge/less.php "*"` (`OyejorgeLess`)  
-        or `leafo/lessphp "*"` (`LeafoLess`)
+        `oyejorge/less.php "*"` (OyejorgeLess)  
+        or `leafo/lessphp "*"` (LeafoLess)
 *   `scss`: converts scss to css
-    - dependence `leafo/scssphp "*"` (`Scss`)
+    - dependence `leafo/scssphp "*"` (Scss)
 *   `markdown`: converts markdown to html
     - dependence one of following:  
-        `michelf/php-markdown "~1.3"` (`MichelfMarkdown`, `MichelfMarkdownExtra`, ``)  
-        or `cebe/markdown "~1.0.1"` (`CebeMarkdown`, `CebeMarkdownExtra`, `CebeGithubMarkdown`)   
-        or `erusev/parsedown "*"` (`Parsedown`)  
-        or `league/commonmark ">=0.5"` (`CommonMark`)  
-        or `kzykhys/ciconia "~1"` (`CiconiaMarkdown`)  
-        or `fluxbb/commonmark "~1@dev"` (`FluxBBMarkdown`)
+        `michelf/php-markdown "~1.3"` (MichelfMarkdown, MichelfMarkdownExtra)  
+        or `cebe/markdown "~1.0.1"` (CebeMarkdown, CebeMarkdownExtra, CebeGithubMarkdown)   
+        or `erusev/parsedown "*"` (Parsedown)  
+        or `league/commonmark ">=0.5"` (CommonMark)  
+        or `kzykhys/ciconia "~1"` (CiconiaMarkdown)  
+        or `fluxbb/commonmark "~1@dev"` (FluxBBMarkdown)
 *   `rest`: converts reStructuredText to html
-    - dependence `gregwar/rst "~1"` (`ReST`)
+    - dependence `gregwar/rst "~1"` (ReST)
     
 To enable non default filters you must first install them via composer.  
 Example, install coffee filter:
@@ -177,7 +177,6 @@ List of all the filters with default options see in file `AbstractMtHamlViewRend
 List of all the filters with default options:
 
 ```php
-    //....
     'coffee' => [
         // Package: "coffeescript/coffeescript"
         'filter' => 'CoffeeScript',  
@@ -190,6 +189,7 @@ List of all the filters with default options:
             'trace' => null,
         ],
     ],
+    
     'less' => [
         // Package: "oyejorge/less.php"
         'filter' => 'OyejorgeLess',
@@ -211,6 +211,7 @@ List of all the filters with default options:
             'cacheDir' => null
         ],
     ],
+    
     'less' => [
         // Package: "leafo/lessphp"
         'filter' => 'LeafoLess',
@@ -219,6 +220,7 @@ List of all the filters with default options:
             'importDirs' => [],
         ],
     ],
+    
     'scss' => [
         // Package: "leafo/scssphp"
         'filter' => 'Scss',
@@ -227,6 +229,7 @@ List of all the filters with default options:
             'importDirs' => [],
         ],
     ],
+    
     'markdown' => [
         // Package: "michelf/php-markdown"
         'filter' => 'MichelfMarkdown',
@@ -240,6 +243,7 @@ List of all the filters with default options:
             'predef_titles' => [],
         ],
     ],
+    
     'markdown' => [
         // Package: "michelf/php-markdown"
         'filter' => 'MichelfMarkdownExtra',
@@ -247,6 +251,7 @@ List of all the filters with default options:
             // Same as for MichelfMarkdown
         ],
     ],
+    
     'markdown' => [
         // Package: "cebe/markdown"
         'filter' => 'CebeMarkdown',
@@ -255,6 +260,7 @@ List of all the filters with default options:
             'html5' => false,
         ],
     ],
+    
     'markdown' => [
         // Package: "cebe/markdown"
         'filter' => 'CebeMarkdownExtra',
@@ -263,6 +269,7 @@ List of all the filters with default options:
             'html5' => false,
         ],
     ],
+    
     'markdown' => [
         // Package: "cebe/markdown"
         'filter' => 'CebeGithubMarkdown',
@@ -272,6 +279,7 @@ List of all the filters with default options:
             'enableNewlines' => false,
         ],
     ],
+    
     'markdown' => [
         // Package: "kzykhys/ciconia"
         'filter' => 'CiconiaMarkdown',
@@ -282,6 +290,7 @@ List of all the filters with default options:
             'strict' => false,
         ],
     ],
+    
     'markdown' => [
         // Package: "league/commonmark"
         'filter' => 'CommonMark',
@@ -289,6 +298,7 @@ List of all the filters with default options:
             'forceOptimization' => false,
         ],
     ],
+    
     'markdown' => [
         // Package: "fluxbb/commonmark"
         'filter' => 'FluxBBMarkdown',
@@ -296,6 +306,7 @@ List of all the filters with default options:
             'forceOptimization' => false,
         ],
     ],
+    
     'markdown' => [
         // Package: "erusev/parsedown"
         'filter' => 'Parsedown',
@@ -303,12 +314,13 @@ List of all the filters with default options:
             'forceOptimization' => false,
         ],
     ],
+    
     'rest' => [
         // Package: "gregwar/rst"
         'filter' => 'ReST',
-        // no options
+        // non options
     ],
-    //....
+
 ```
 
 ## Twig Extensions
