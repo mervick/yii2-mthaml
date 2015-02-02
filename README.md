@@ -320,7 +320,7 @@ List of all the filters with default options:
 
 ## Twig Extensions
 
-The Twig Extensions is a library that provides several useful extensions for Twig. [Learn more](http://twig.sensiolabs.org/doc/extensions/index.html)
+The [Twig Extensions](http://twig.sensiolabs.org/doc/extensions/index.html) is a library that provides several useful extensions for Twig.
 
 Install via Composer:
 ```bash
