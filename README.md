@@ -148,7 +148,7 @@ After what include it in your config file:
             'class' => 'mervick\mthaml\HamlViewRenderer',
             'cachePath' => '@runtime/Haml/cache',
             'options' => [
-                'charset' => 'UTF-8',
+                //....
             ],
             'filters' => [
                 // shorten
@@ -220,7 +220,7 @@ List of all the filters with default options:
         'options' => [
             // import dirs
             'importDirs' => [],
-            // enable Compass integration
+            // enable Compass integration, depends on "leafo/scssphp-compass"
             'enableCompass' => false,
         ],
     ],
@@ -313,7 +313,7 @@ List of all the filters with default options:
     'rest' => [
         // Package: "gregwar/rst"
         'filter' => 'ReST',
-        // non options
+        // no options
     ],
 
 ```
