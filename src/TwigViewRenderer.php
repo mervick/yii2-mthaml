@@ -19,6 +19,7 @@ class TwigViewRenderer extends AbstractMtHamlViewRenderer
 	 * You can find it's code at GitHub.com/twigphp/Twig-extensions.
 	 * This library can be installed via Composer running the following from the command line:
 	 * 		composer require twig/extensions ~1.1.0
+	 * Provided extensions:
 	 * - Text: Provides useful filters for text manipulation;
 	 * - I18n: Adds internationalization support via the gettext library;
 	 * - Intl: Adds a filter for localization of DateTime objects;
@@ -37,7 +38,7 @@ class TwigViewRenderer extends AbstractMtHamlViewRenderer
 
 
 	/**
-	 * Init a haml parser instance
+	 * Init a parser
 	 */
 	public function init()
 	{
@@ -54,7 +55,6 @@ class TwigViewRenderer extends AbstractMtHamlViewRenderer
 			'cache' => Yii::getAlias($this->cachePath),
 		]);
 		$this->parser->addExtension(new MtHaml\Support\Twig\Extension($haml));
-
 		if (!empty($this->extensions)) {
 			foreach ($this->extensions as $name) {
 				$this->parser->addExtension($this->getExtension($name));

@@ -89,15 +89,9 @@ This is default options:
             'cachePath' => '@runtime/Twig/cache',
             'debug' => false,
             'options' => [
-                'format' => 'html5',
-                // Twig already supports auto escaping, so it turned off in MtHaml
+                // Same as for haml, except "enable_escaper"
+                // Twig extension already supports auto escaping, so it turned off for MtHaml
                 'enable_escaper' => false,
-                'escape_html' => true,
-                'escape_attrs' => true,
-                'cdata' => true,
-                'autoclose' => array('meta', 'img', 'link', 'br', 'hr', 'input', 'area', 'param', 'col', 'base'),
-                'charset' => 'UTF-8',
-                'enable_dynamic_attrs' => true,
             ],
         ],
     //....
@@ -123,13 +117,14 @@ Filters which not enabled by default:
 *   `coffee`: compiles coffeescript to javascript
     - dependence `coffeescript/coffeescript "~1"` (CoffeeScript)
 *   `less`: compiles as Lesscss
-    - dependence one of following:  
+    - depends one of following:  
         `oyejorge/less.php "*"` (OyejorgeLess)  
         or `leafo/lessphp "*"` (LeafoLess)
 *   `scss`: converts scss to css
-    - dependence `leafo/scssphp "*"` (Scss)
+    - dependence `leafo/scssphp "*"` (Scss)  
+        additionally, to use [Compass](http://compass-style.org/) `leafo/scssphp-compass "dev-master"`
 *   `markdown`: converts markdown to html
-    - dependence one of following:  
+    - depends one of following:  
         `michelf/php-markdown "~1.3"` (MichelfMarkdown, MichelfMarkdownExtra)  
         or `cebe/markdown "~1.0.1"` (CebeMarkdown, CebeMarkdownExtra, CebeGithubMarkdown)   
         or `erusev/parsedown "*"` (Parsedown)  
@@ -171,8 +166,6 @@ After what include it in your config file:
     //....
 
 ```
-
-List of all the filters with default options see in file `AbstractMtHamlViewRenderer.php`.
 
 List of all the filters with default options:
 
@@ -227,6 +220,8 @@ List of all the filters with default options:
         'options' => [
             // import dirs
             'importDirs' => [],
+            // enable Compass integration
+            'enableCompass' => false,
         ],
     ],
     
