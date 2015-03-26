@@ -20,7 +20,7 @@ class HamlViewRenderer extends AbstractMtHamlViewRenderer
 	{
 		parent::init();
 		$haml = new MtHaml\Environment('php', $this->options, $this->getFilters());
-		$this->parser = new MtHaml\Support\Php\Executor($haml, [
+		$this->parser = new \mervick\mthaml\override\Executor($haml, [
 			'cache' => Yii::getAlias($this->cachePath),
 			'debug' => $this->debug
 		]);
