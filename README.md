@@ -347,6 +347,29 @@ Add the following lines to config file:
     //....
 ```
 
+## Attention!
+Inside the templates you must use `$view` instead of `$this`, example: 
+```HAML
+-use backend\assets\AppAsset
+-use yii\helpers\Html
+
+-AppAsset::register($view)
+-$view->beginPage()
+!!!
+%html{:lang=>Yii::$app->language}
+    %head
+        %meta{:charset=>Yii::$app->charset}
+        %meta(name="viewport" content="width=device-width, initial-scale=1")
+        !=Html::csrfMetaTags()
+        %title =Html::encode($view->title)
+        -$view->head()
+    %body
+        -$view->beginBody()
+        !=$content
+        -$view->endBody()
+-$view->endPage()
+```
+
 
 ## License
 
