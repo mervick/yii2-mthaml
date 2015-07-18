@@ -1,5 +1,6 @@
 Yii2 MtHaml
 ===========
+[![Analytics](https://ga-beacon.appspot.com/UA-65295275-1/yii2-mthaml)](https://github.com/igrigorik/ga-beacon)
 
 The MtHaml integration for the Yii2 framework.  
 Extension provides a `ViewRenders` that would allow you to use Haml/Twig view template engines, using [Multi target HAML (MtHaml)](https://github.com/arnaud-lb/MtHaml) library.
